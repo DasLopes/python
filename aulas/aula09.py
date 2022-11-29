@@ -24,3 +24,15 @@ frase = '    Curso em Vídeo Python    '
 #print(len(frase.strip())) #mostra quantos digitados tem a frase desconsiderando os espaços vazios antes e depois da frase.
 
 #print(frase.replace('Python', 'Android'))  #mostra a string na tela substituindo a palavra python por android
+
+#print('Curso' in frase) #consulta se a palavra entre aspas esta na string e retorna True ou False
+
+#print(frase.find('Curso')) #retorna o número da posição na qual aparece a palavra entre aspas.
+
+#print(frase.lower().find('vídeo')) #alterar toda a string para minuscula e procura pela palavra entre aspas e retorna sua posição
+
+#print(frase.split()) #mostra a string transformada em lista
+
+dividido = frase.split() #criou uma variavel que recebeu a string transformada em lista
+#print(dividido[0]) #mostra na tela o item da posição
+#print(dividido[2] [3]) #pega o segundo item da lista e mostra a letra que aparece na posição 3
