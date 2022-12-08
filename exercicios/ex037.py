@@ -1,13 +1,15 @@
 num = int(input('Digite um número inteiro: '))
-print('( 1 ) para binário: ')
-print('( 2 ) para octal: ')
-print('( 3 ) para hexadecimal: ')
+print('''Escolha uma das bases para conversão:
+[ 1 ] converter para BINÁRIO
+[ 2 ] converter para OCTAL
+[ 3 ] converter para HEXADECIMAL''')
+
 op = int(input('Digite uma das opções acima: '))
 if op == 1:
-    print('binário: {}'.format(bin(num)))
+    print('{} convertido para BINÁRIO é igual a: {}'.format(num, bin(num)[2:]))
 elif op == 2:
-    print('Octal: {}'.format(oct(num)))
+    print('{} convertido para OCTAL é igual a: {}'.format(num, oct(num)[2:]))
 elif op == 3:
-    print('Hexadecimal: {}'.format(hex(num)))
+    print('{} convertido para HEXADECIMAL é igual a: {}'.format(num, hex(num)[2:]))
 else:
     print('Opção inválida.')
