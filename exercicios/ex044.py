@@ -1,34 +1,24 @@
-print('=' * 60)
-print('Condições enquanto durar o estoque:')
-print('=' * 60)
-
-print('[ 1 ] À vista (dinheiro / cheque / pix) 10% de desconto')
-print('[ 2 ] À vista no cartão: 5% de desconto')
-print('[ 3 ] Em até 2x no cartão: preço normal')
-print('[ 4 ] 3x ou mais no cartão: 20% de juros')
-print('=' * 60)
-#valor = float(input('Qual o valor do produto? '))
-compra = 100
+print('{:=^40}'.format(' LOJAS AMARELINHAS '))
+preço = float(input('Preço das compras: R$'))
+print('''FORMAS DE PAGAMENTO
+[ 1 ] À vista (dinheiro / cheque / pix) 10% de desconto')
+[ 2 ] À vista no cartão: 5% de desconto')
+[ 3 ] Em até 2x no cartão: preço normal')
+[ 4 ] 3x ou mais no cartão: 20% de juros''')
 opção = int(input('Qual a forma de pagamento? '))
-
-if opção == 1:
-    desc = compra / 100 * 10
-    valor = compra - desc
-    print('Para a compra no valor de R${}, com a opção [ {} ] você obteve {}% de desconto.'.format(compra, opção, desc))
-elif opção == 2:
-    desc = compra / 100 * 5
-    valor = compra - desc
-    print('Para a compra no valor de R${}, com a opção [ {} ] você obteve {}% de desconto.'.format(compra, opção, desc))
-elif opção == 3:
-    desc = 0
-    valor = compra
-    print('Para a compra no valor de R${}, com a opção [ {} ] você obteve {}% de desconto.'.format(compra, opção, desc))
-elif opção == 4:
-    acres = compra / 100 * 20
-    valor = compra + acres
-    print('Para a compra no valor de R${}, com a opção [ {} ] você terá um acrescimo de {}%.'.format(compra, opção, acres))
-else:
+if opção != 1 and opção !=2 and opção != 3 and opção != 4:
     print('Opção inválida')
-    valor = 0
-
-print('Valor da compra atualizado: R${:.2f}'.format(valor))
+elif opção == 1:    
+    total = preço - (preço / 100 * 10)
+elif opção == 2:
+    total = preço - (preço / 100 * 5)
+elif opção == 3:
+    total = preço
+    valorParc = total / 2
+    print('Sua compra será parcelada em 2x de R${}.'.format(valorParc))
+elif opção == 4:
+    total = preço + (preço / 100 * 20)
+    totParc = int(input('Em quantas vezes deseja parcelar? '))
+    valorParc = total / totParc
+    print('Sua compra será parcelada em {}x de R${:.2f} COM JUROS.'.format(totParc, valorParc))
+print('Sua compra de R${:.2f} vai custar R${:.2f} no final'.format(preço, total))
