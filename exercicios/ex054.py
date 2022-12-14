@@ -5,8 +5,8 @@ from datetime import date
 anoAtual = date.today().year
 menor = 0
 maior = 0
-for c in range(0, 7):
-    anoNasc = int(input('Em que ano nasceu? '))
+for c in range(1, 8):
+    anoNasc = int(input('Em que ano {}ª pessoa nasceu? '.format(c)))
     idade = anoAtual - anoNasc
     if idade < 18:
         menor += 1
