@@ -7,10 +7,12 @@ a torre da derrota
 o lobo ama o bolo
 anoratam a data da maratona
 '''
-frase1 = 'apos a sopa'.upper()
-frase2 = frase1[::-1]
-print(frase1, ' = ', frase2)
-if frase1 == frase2:
-    print('palindromo')
+frase = 'a torre da derrota'.strip().upper()
+palavra = frase.split()
+junto = ''.join(palavra)
+inverso = junto[::-1]
+print('O inverso de "{}" é "{}".'.format(junto, inverso))
+if frase == inverso:
+    print('A frase é um palindromo')
 else:
-    print('não forma palindromo')
+    print('A frase não é um palindromo')
