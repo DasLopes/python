@@ -9,7 +9,7 @@ fib2 = 1
 fib3 = 0
 cont = 2
 
-print('Sequência Fibonacci: {} -> {} -> '.format(fib1, fib2, end=''))
+print('Sequência Fibonacci: 0 -> 1 -> '.format(end=''))
 while cont != termo:
     fib3 = fib1 + fib2
     fib1 = fib2
