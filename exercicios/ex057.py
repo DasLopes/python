@@ -3,7 +3,6 @@
 sx = False
 while sx == False:
     sexo = str(input('Digite o sexo: [M/F] ')).upper()
-    print(sexo)
     if sexo == 'F' or sexo == 'M':
         sx = True    
-print('Obrigado')
+print('Sexo {} registrado.'.format(sexo))
