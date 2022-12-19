@@ -1,4 +1,4 @@
-fatorial = 5#int(input('Digite um número: '))
+fatorial = int(input('Digite um número: '))
 print('Fatorial: ', fatorial, ' ', end='')
 cont = fatorial
 for c in range(1, fatorial):
