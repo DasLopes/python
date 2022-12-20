@@ -15,13 +15,13 @@ Spock vaporiza pedra
 #from random import randint
 import random
 lista = ['pedra', 'tesoura', 'papel', 'lagarto', 'spock']
-computador = 'spock'#random.choice(lista)
+computador = random.choice(lista)
 print(computador)
 print('Você tem 3 tentativas...')
 tentativas = 3
 ganhou = False
 while tentativas != 0 and ganhou != True:
-    jogador = str(input('Faça sua escolha: ')).strip().lower()
+    jogador = 'papel'#str(input('Faça sua escolha: ')).strip().lower()
     if jogador == 'pedra':
         if computador == 'papel':
             print('Papel cobre pedra. Tente novamente.')
