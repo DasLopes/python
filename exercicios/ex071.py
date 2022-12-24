@@ -9,9 +9,9 @@ print('=' * 40)
 saque = int(input('Que valor você quer sacar? R$'))
 
 ced50 = saque // 50
-ced20 = (saque % 50) // 20
-ced10 = (saque % 20) // 10
-ced1 = (saque % 10) // 1
+ced20 = (saque - (ced50 * 50)) // 20
+ced10 = ((saque - (ced50 * 50)) % 20) // 10
+ced1 = ((saque - (ced50 * 50)) % 20) % 10
 
 if ced50 > 0:
     print(f'Total de {ced50} cédulas de R$50')
