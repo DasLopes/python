@@ -1,17 +1,22 @@
-saque = int(input('Que valor você quer sacar? R$'))
-
-ced50 = saque // 50
-ced20 = (saque - (ced50 * 50)) // 20
-ced10 = ((saque - (ced50 * 50)) % 20) // 10
-ced1 = ((saque - (ced50 * 50)) % 20) % 10
-
-if ced50 > 0:
-    print(f'Total de {ced50} cédulas de R$50')
-if ced20 > 0:
-    print(f'Total de {ced20} cédulas de R$20')
-if ced10 > 0:
-    print(f'Total de {ced10} cédulas de R$10')
-if ced1 > 0:
-    print(f'Total de {ced1} cédulas de R$1')
-
-print('=' * 40)
+'''Faça um programa que leia 5 valores numéricos e guarde-os em uma lista.
+No final, mostre qual foi o maior e o menor valor digitado e as suas respectivas posições na lista.'''
+from random import randint
+lista = []
+for l in range(0,5):
+    lista.append(randint(0,9))
+print(lista)
+maior = menor = 0
+posMenor = posMaior = 0
+for c, l in enumerate(lista):
+    if c == 0:
+        maior = l
+        menor = l
+    else:
+        if maior < l:
+            maior = l
+            posMaior = c
+        if menor > l:
+            menor = l
+            posMenor = c
+print(f'O maior número {maior} foi encontrado na posição {posMaior}.')
+print(f'O menor número {menor} foi encontrado na posição {posMenor}.')
