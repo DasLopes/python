@@ -1,4 +1,4 @@
-'''Anotações
+print('''Anotações''')
 
 lanche = ['hamburger', 'suco', 'pizza', 'pudim']
 print(lanche)
@@ -30,7 +30,47 @@ valores2.sort(reverse=True) #coloca os elementos em ordem inversa
 print(valores2)
 tamanho = len(valores2)
 print(tamanho)
-'''
 
-'Parte prática'
 
+print('Parte prática 1')
+
+num = [2,5,9,1,5,8,2]
+num[2] = 3 #substitui o elemento da posição 2 pelo número 3
+num.append(7) #adiciona o elemento 7 na última posição da lista
+num.sort() #coloca todos os elementos da lista em ordem
+num.sort(reverse=True) #coloca os elementos da lista em ordem reversa
+num.insert(2, 2) #insere o valor 0 na posição 2
+num.remove(2) #remove a primeira ocorrência encontrada (valor 2)
+if 5 in num: #varre a lista e se encontra o elemento desejado, remove.
+    num.remove(5)
+else:
+    print('não achei o número 5')
+print(num)
+print(f'Essa lista em {len(num)} elementos')
+
+print('Parte prática 2')
+
+valores = []
+valores.append(5)
+valores.append(9)
+valores.append(4)
+
+for cont in range(0,5):
+    valores.append(int(input('Digite um valor: ')))
+
+for v in valores:
+    print(f'{v}...', end='')
+
+for c, v in enumerate(valores):
+    print(f'Na posição {c} encontrei o valor {v}!')
+print('Cheguei ao final da lista.')
+
+print('Parte prática 3')
+
+a = [2,3,4,7]
+b = a #IMPORTANTE: o Python cria uma ligação entre listas, ao alterar o conteúdo de uma, a outra também sofrerá alteração
+c = a[:] #cria uma cópia de todos os elementos da lista a em c
+b[2] = 8
+print(f'Lista A: {a}')
+print(f'Lista B: {b}')
+print(f'Lista C: {c}')
