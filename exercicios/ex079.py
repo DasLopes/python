@@ -1,19 +1,20 @@
 '''Crie um programa onde o usuário possa digitar vários valores numéricos e cadastre-os em uma lista. Caso o número já exista lá dentro ele não será adicionado.
 No final, serão exibidos todos os valores únicos digitados, em ordem crescente.'''
 
-lista = []
-cont = 0
-lista.append(int(input('Digite um número: ')))
+números = []
 while True:
-    
-    for c not in lista:
-        lista.append(int(input('Digite um número: ')))
-    
+    n = int(input('Digite um número: '))
+    if n not in números:
+        números.append(n)
+        print('Número adicionado com sucesso...')
+    else:
+        print('Número duplicado, não adicionado')
+
     while True:
-        continuar = str(input('Deseja continuar: [S/N] ')).strip().upper()[0]
-        if continuar in 'SN':
+        r = str(input('Desejar continuar? [S/N] ')).strip().upper()[0]
+        if r in 'SN':
             break
-    if continuar in 'N':
+    if r in 'N':
         break
-    cont += 1
-print(f'Lista: {lista}')
+números.sort()
+print(f'Você digitou os valores {números}')
