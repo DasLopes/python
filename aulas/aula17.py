@@ -39,7 +39,7 @@ num[2] = 3 #substitui o elemento da posição 2 pelo número 3
 num.append(7) #adiciona o elemento 7 na última posição da lista
 num.sort() #coloca todos os elementos da lista em ordem
 num.sort(reverse=True) #coloca os elementos da lista em ordem reversa
-num.insert(2, 2) #insere o valor 0 na posição 2
+num.insert(2, 0) #insere o valor 0 na posição 2
 num.remove(2) #remove a primeira ocorrência encontrada (valor 2)
 if 5 in num: #varre a lista e se encontra o elemento desejado, remove.
     num.remove(5)
