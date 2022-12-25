@@ -3,10 +3,11 @@ No final, serão exibidos todos os valores únicos digitados, em ordem crescente
 
 lista = []
 cont = 0
-
+lista.append(int(input('Digite um número: ')))
 while True:
-    lista.append(int(input('Digite um número: ')))
     
+    for c not in lista:
+        lista.append(int(input('Digite um número: ')))
     
     while True:
         continuar = str(input('Deseja continuar: [S/N] ')).strip().upper()[0]

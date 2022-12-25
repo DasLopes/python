@@ -1,22 +1,23 @@
 '''Faça um programa que leia 5 valores numéricos e guarde-os em uma lista.
 No final, mostre qual foi o maior e o menor valor digitado e as suas respectivas posições na lista.'''
-from random import randint
+
 lista = []
-for l in range(0,5):
-    lista.append(randint(0,9))
-print(lista)
 maior = menor = 0
-posMenor = posMaior = 0
-for c, l in enumerate(lista):
+for c in range(0,5):
+    lista.append(int(input('Digite um número: ')))
     if c == 0:
-        maior = l
-        menor = l
+        maior = menor = lista[c]
     else:
-        if maior < l:
-            maior = l
-            posMaior = c
-        if menor > l:
-            menor = l
-            posMenor = c
-print(f'O maior número {maior} foi encontrado na posição {posMaior}.')
-print(f'O menor número {menor} foi encontrado na posição {posMenor}.')
+        if lista[c] > maior:
+            maior = lista[c]
+        if lista[c] < menor:
+            menor = lista[c]
+print(f'Você digitou os valors {lista}')
+print(f'O maior número encontrado foi {maior} nas posições: ', end='')
+for c, l in enumerate(lista):
+    if l == maior:
+        print(c, end=' ')
+print(f'\nO menor número encontrado foi {menor} nas posições: ', end='')
+for c, l in enumerate(lista):
+    if l == menor:
+        print(c, end=' ')
