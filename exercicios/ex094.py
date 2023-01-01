@@ -25,12 +25,10 @@ while True:
         break
 média = totIdade / len(list)
 print('-=' * 30)
-print(list)
 print(f'a) Ao todo temos {len(list)} pessoas cadastradas.')
-print(f'b) A média de idade é de {média} anos.')
+print(f'b) A média de idade é de {média:.1f} anos.')
 print(f'c) As mulheres cadastradas foram {totMulheres}')
 print('d) Lista das pessoas que estão acima da média:')
-for e in list:
-    for v in e.list():
-        if v > média:
-            print(v)
+for c in range(0, len(list)):
+    if list[c]['idade'] > 24:
+        print(list[c])
