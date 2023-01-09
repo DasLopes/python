@@ -1,14 +1,13 @@
-def leiaInt(n):
+def leiaInt():
     n = str(input('Digite um número: '))
     if n.isnumeric():
         return n
-    else:
-        
+    else:        
         return 'ERRO! Digite um número válido.'
 
 
-leiaInt()
+#leiaInt()
 
-'''
-n = leiaInt('Digite um número: ')
-print(f'Você acabou de digitar o número {n}')'''
+
+leiaInt('Digite um número: ')
+print(f'Você acabou de digitar o número {n}')
