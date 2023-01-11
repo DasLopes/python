@@ -7,17 +7,22 @@ modularização: ato de construir modulos
 * Foco: aumentar a legibilidade
 * Foco: facilitar a manutenção
 '''
-# = AULA PRÁTICA =  = AULA PRÁTICA =  = AULA PRÁTICA =  = AULA PRÁTICA =  = AULA PRÁTICA =  = AULA PRÁTICA =  = AULA PRÁTICA =  = AULA PRÁTICA 
-def pratica():
-    print(' = AULA PRÁTICA = ' * 10)
-pratica()
 
-def fatorial(n):
-    f = 1
-    for c in range(1, n+1):
-        f *= c
-    return f
+'''
+Vantagens
+
+* Organização do código
+* Facilidade na manutenção
+* Ocultação de código detalhado
+* Reutilizar em outros projetos
+'''
+# = AULA PRÁTICA =  = AULA PRÁTICA =  = AULA PRÁTICA =  = AULA PRÁTICA =  = AULA PRÁTICA =  = AULA PRÁTICA =  = AULA 
+from uteis import numeros
+
+numeros.pratica()
 
 num = int(input('Digite um valor: '))
-fat = fatorial(num)
+fat = numeros.fatorial(num)
 print(f'O fatorial de {num} é {fat}')
+print(f'O dobro de {num} é {numeros.dobro(num)}')
+print(f'O triplo de {num} é {numeros.triplo(num)}')
