@@ -1,4 +1,5 @@
-from ex111.util import moeda
+from ex112.util import moeda
+from ex112.util import dado
 
-p = str(input('Digite o preço: R$'))
+p = dado.leiaDinheiro(('Digite o preço: R$'))
 moeda.resumo(p, 35, 22)
