@@ -1,9 +1,13 @@
 from ex115.lib.interface import *
+from ex115.lib.arquivo import *
 
+arq = 'cadastro.txt'
+if not arquivoExiste(arq):
+    criarArquivo(arq)
 while True:
     resposta = menu(['Ver pessoas cadastradas', 'Cadastrar nova pessoa', 'Sair do Sistema'])
     if resposta == 1:
-        cabeçalho('opção 1')
+        lerArquivo(arq)
     elif resposta == 2:
         cabeçalho('opção 2')
     elif resposta == 3:
