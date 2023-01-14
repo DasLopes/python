@@ -1,11 +1,5 @@
 '''
-Crie um programa que leia uma frase qualquer e diga se ela é um palindromo, desconsiderando os espaços.
-exemplos:
-apos a sopa
-a sacada da casa
-a torre da derrota
-o lobo ama o bolo
-anoratam a data da maratona
+Crie um programa que leia uma frase qualquer e diga se ela é um palíndromo, desconsiderando os espaços.
 '''
 frase = 'a torre da derrota'.strip().upper()
 palavra = frase.split()
