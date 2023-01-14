@@ -1,7 +1,10 @@
-'''Crie uma matriz de 3x3 e faça o computador preencher automaticamente, mostrando-0 no final:
-a) A soma de todos os valroes pares.
-b) A soma dos valores da terceira coluna.
-c) O maior valor da segunda linha.'''
+'''
+Aprimore o desafio anterior, mostrando no final: 
+A) A soma de todos os valores pares digitados.
+B) A soma dos valores da terceira coluna.
+C) O maior valor da segunda linha.
+'''
+
 from random import randint
 matriz = [[0,0,0],[0,0,0],[0,0,0]]
 for l in range(0,3):
