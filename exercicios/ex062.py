@@ -1,4 +1,6 @@
-'''Faça uma progressão aritmética e encerre o programa quando digitar 0'''
+'''
+Melhore o DESAFIO 061, perguntando para o usuário se ele quer mostrar mais alguns termos. O programa encerrará quando ele disser que quer mostrar 0 termos.
+'''
 
 primeiro = int(input('Primeiro termo: '))
 razão = int(input('Razão: '))
