@@ -1,4 +1,6 @@
-'''Faça um programa que ajude um jogador da MEGA SENA a criar papites. O programa vai perguntar quantos jogos serão gerados e vai sortear 6 números entre 1 e 60 para cada jogo, cadastrando tudo em uma lista composta.'''
+'''
+Faça um programa que ajude um jogador da MEGA SENA a criar palpites.O programa vai perguntar quantos jogos serão gerados e vai sortear 6 números entre 1 e 60 para cada jogo, cadastrando tudo em uma lista composta.
+'''
 
 print('-' * 40)
 print('{:^10}'.format('JOGA NA MEGA SENA'))
