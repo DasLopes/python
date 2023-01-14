@@ -1,3 +1,7 @@
+'''
+Vamos criar um menu em Python, usando modularização.
+'''
+
 from ex115.lib.interface import *
 from ex115.lib.arquivo import *
 
